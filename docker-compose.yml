@@ -27,11 +27,11 @@ services:
     ports:
       - "3307:3306"  # Change port if necessary
     volumes:
-      - mysql_data:/var/lib/mysql
+      - mysql_data1:/var/lib/mysql
       - ./mompopdb/create-db.sql:/docker-entrypoint-initdb.d/create-db.sql
 
 volumes:
   #admin_data:
   #faculty_data:
   #student_data:
-  mysql_data:
+  mysql_data1:
